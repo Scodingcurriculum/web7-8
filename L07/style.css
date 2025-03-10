@@ -1,0 +1,29 @@
+/* Body styling */
+body {
+    margin: 0;
+    padding: 0;
+  }
+
+
+  /* Heading styles */
+  h1 {
+    color: #2c3e50; /* Dark blue heading */
+  }
+
+  h2 {
+    color: #16a085; /* Dark green heading */
+  }
+
+  /* List container styles */
+  .list-container {
+    background-color: #fbf3d3; /* Light China Ivory background */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Drop shadow effect */
+    margin: 20px;
+    padding: 20px;
+  }
+
+  /* List item styles */
+  li {
+    margin-bottom: 10px;
+  }

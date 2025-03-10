@@ -1,0 +1,120 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    background: linear-gradient(to right, #ff7e5f, #feb47b, #6a11cb);
+}
+
+.contact-form-container {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+}
+
+.contact-form h1 {
+    margin-bottom: 20px;
+    font-size: 2em;
+    color: #333;
+    text-align: center;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-icon {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.input-icon i {
+    position: absolute;
+    left: 10px;
+    color: #aaa;
+    transition: color 0.3s ease-in-out;
+}
+
+.input-icon input,
+.input-icon textarea,
+.input-icon select {
+    width: 100%;
+    padding: 10px 10px 10px 30px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.input-icon input:focus,
+.input-icon textarea:focus,
+.input-icon select:focus {
+    border-color: #ff7e5f;
+    box-shadow: 0 0 5px rgba(255, 126, 95, 0.5);
+}
+
+.contact-form button {
+    background: #ff7e5f;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.contact-form button:hover {
+    background: #feb47b;
+    transform: scale(1.05);
+}
+
+.input-icon input:hover,
+.input-icon textarea:hover,
+.input-icon select:hover {
+    border-color: #6a11cb;
+}
+
+.input-icon input:focus + i,
+.input-icon textarea:focus + i,
+.input-icon select:focus + i {
+    color: #ff7e5f;
+}
+
+.input-icon i:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.error-message {
+    color: red;
+    font-size: 0.875em;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+
+.loading-spinner {
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    border-left-color: #ff7e5f;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    animation: spin 1s linear infinite;
+    margin: 10px auto;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}

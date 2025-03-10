@@ -1,0 +1,28 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+#title1 {
+  text-align: center;
+}
+
+.intro-image {
+  display: block;
+  margin: 0 auto 20px;
+  width: 100%;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid #dddddd;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}

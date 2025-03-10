@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="form-container">
+    
+        <h1>Thanksgiving Recipe Collection Form</h1>
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="recipe-name">Recipe Name:</label>
+                <input type="text" id="recipe-name" name="recipe-name" required>
+            </div>
+            <div class="form-group">
+                <label for="description">Description:</label>
+                <textarea id="description" name="description" rows="4" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="ingredients">Ingredients:</label>
+                <textarea id="ingredients" name="ingredients" rows="6" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="secret-ingredient">Secret Ingredient:</label>
+                <input type="password" id="secret-ingredient" name="secret-ingredient" required>
+            </div>
+            <div class="form-group">
+                <label for="instructions">Instructions:</label>
+                <textarea id="instructions" name="instructions" rows="8" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="prep-time">Prep Time:</label>
+                <input type="text" id="prep-time" name="prep-time" required>
+            </div>
+            <div class="form-group">
+                <label for="cook-time">Cook Time:</label>
+                <input type="text" id="cook-time" name="cook-time" required>
+            </div>
+            <div class="form-group">
+                <label for="servings">Servings:</label>
+                <input type="number" id="servings" name="servings" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="date-of-cooking">Date of Cooking:</label>
+                <input type="date" id="date-of-cooking" name="date-of-cooking" required>
+            </div>
+            <div class="form-group">
+                <label>Meal Type:</label>
+                <input type="radio" id="starter" name="type" value="starter" required> Starter
+                <input type="radio" id="meal" name="type" value="meal"> Meal
+            </div>
+            <div class="form-group">
+                <label>Dietary Preference:</label>
+                <input type="checkbox" id="vegan" name="diet" value="vegan"> Vegan
+                <input type="checkbox" id="non-vegan" name="diet" value="non-vegan"> Non-Vegan
+            </div>
+            <div class="form-group">
+                <button type="submit">Submit Recipe</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,138 @@
+/* Google Font Poppins Import */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Global Selector */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Header */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px 100px;
+  background: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 32px;
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.navbar a {
+  position: relative;
+  font-size: 18px;
+  color: white;
+  font-weight: 500;
+  text-decoration: none;
+  margin-left: 40px;
+}
+
+.navbar a::before {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background: white;
+  transition: .3s;
+}
+
+.navbar a:hover::before {
+  width: 100%;
+}
+
+/* Hero Section */
+#hero {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  text-align: center;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 20px;
+}
+
+#background-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+.hero-content {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.hero-content h1 {
+  font-size: 4em;
+  margin: 0.5em 0;
+}
+
+.hero-content h2 {
+  font-size: 2.5em;
+  margin: 0.5em 0;
+}
+
+.hero-content p {
+  font-size: 1.5em;
+  margin: 0.5em 0 1em;
+}
+
+.hero-subtitle {
+  font-size: 1.2em;
+  margin-bottom: 1em;
+}
+
+.hero-highlights {
+  list-style: none;
+  padding: 0;
+  margin: 1em 0;
+  font-size: 1.2em;
+  line-height: 1.5;
+}
+
+.cta-button {
+  background-color: #ff6347;
+  color: white;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  font-size: 1.2em;
+  border-radius: 5px;
+  display: inline-block;
+  margin-top: 1em;
+}
+
+.cta-button:hover {
+  background-color: #ff4500;
+}

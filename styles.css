@@ -1,0 +1,111 @@
+/* Global Styles */
+body {
+  background: linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d);
+  background-size: 400% 400%;
+  animation: gradientBG 8s ease infinite;
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+  min-height: 100vh;
+}
+
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Rotating Cube */
+.rotating-cube {
+  width: 150px;
+  height: 150px;
+  perspective: 800px;
+  position: relative;
+}
+
+.rotating-cube .cube-face {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  background: rgba(255, 255, 255, 0.9);
+  color: #000;
+  font-size: 1rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #fff;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.cube-face-front { transform: translateZ(75px); }
+.cube-face-back { transform: rotateY(180deg) translateZ(75px); }
+.cube-face-left { transform: rotateY(-90deg) translateZ(75px); }
+.cube-face-right { transform: rotateY(90deg) translateZ(75px); }
+.cube-face-top { transform: rotateX(90deg) translateZ(75px); }
+.cube-face-bottom { transform: rotateX(-90deg) translateZ(75px); }
+
+.rotating-cube {
+  animation: rotateCube 6s infinite ease-in-out;
+  transform-style: preserve-3d;
+}
+
+@keyframes rotateCube {
+  from { transform: rotateX(0) rotateY(0); }
+  to { transform: rotateX(360deg) rotateY(360deg); }
+}
+
+/* Header Animations */
+.text-glow {
+  text-shadow: 0 0 10px #ff9, 0 0 20px #ff9, 0 0 30px #ff3, 0 0 40px #ff3;
+}
+
+.text-flicker {
+  animation: flicker 3s infinite;
+}
+
+@keyframes flicker {
+  0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% { opacity: 1; }
+  20%, 24%, 55% { opacity: 0; }
+}
+
+/* Gradient Text */
+.text-gradient {
+  background: -webkit-linear-gradient(45deg, #ff9a9e, #fad0c4, #fad0c4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Cards */
+main .card {
+  background: rgba(255, 255, 255, 0.9);
+  border: none;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+main .card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5);
+}
+
+.card-body h5 {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.card-body a {
+  transition: all 0.3s;
+}
+
+.card-body a:hover {
+  background-color: #000;
+  color: #fff !important;
+}
+
+/* Footer */
+footer {
+  background: rgba(0, 0, 0, 0.8);
+  color: #aaa;
+}
